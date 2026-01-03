@@ -12,12 +12,12 @@ To run the project locally, you will need to have Ruby and Bundler installed.
 
 1.  **Install dependencies:**
     ```bash
-    bundle install
+    make install
     ```
 
 2.  **Run the Jekyll server:**
     ```bash
-    bundle exec jekyll serve
+    make serve
     ```
 
 The site should then be available at `http://localhost:4000`.
@@ -29,7 +29,7 @@ The project is automatically built and deployed to GitHub Pages when changes are
 The build command is:
 
 ```bash
-bundle exec jekyll b -d "_site"
+make build
 ```
 
 The `JEKYLL_ENV` is set to `production`.
@@ -39,7 +39,7 @@ The `JEKYLL_ENV` is set to `production`.
 The project uses `html-proofer` to test the generated HTML. The test command is run as part of the GitHub Actions workflow:
 
 ```bash
-bundle exec htmlproofer _site --disable-external --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
+make test
 ```
 
 ## Development Conventions
