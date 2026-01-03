@@ -1,0 +1,27 @@
+{% comment %}
+  _includes/lang-switcher.html
+  This file generates a list of links to switch between languages for the current page.
+{% endcomment %}
+<ul class="language-switcher nav">
+  {% for lang in site.languages %}
+    {% assign url = page.url %}
+    {% if lang == site.default_lang %}
+      {% comment %} For the default language, the URL does not include the language code {% endcomment %}
+      {% if site.active_lang != site.default_lang %}
+        {% assign url = page.url | remove_first: '/' | remove_first: site.active_lang | prepend: '/' %}
+      {% endif %}
+      <li class="nav-item">
+        <a href="{{ url | relative_url }}" {% if site.active_lang == lang %}class="active nav-link"{% else %}class="nav-link"{% endif %}>
+          {{ lang | upcase }}
+        </a>
+      </li>
+    {% else %}
+      {% comment %} For non-default languages, prepend the language code to the URL {% endcomment %}
+      <li class="nav-item">
+        <a href="/{{ lang }}{{ page.url | relative_url }}" {% if site.active_lang == lang %}class="active nav-link"{% else %}class="nav-link"{% endif %}>
+          {{ lang | upcase }}
+        </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
