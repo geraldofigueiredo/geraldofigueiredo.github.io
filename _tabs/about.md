@@ -1,7 +1,8 @@
 ---
-# the default layout is 'page'
-icon: fas fa-info-circle
+# the order of sidemenu
 order: 4
+layout: page
+title: About
 ---
 
 Senior Software Engineer with a specialized focus on the intersection of High-Performance Backend, Data Engineering, and Generative AI. With a robust background in the Fintech sector, I build distributed systems that are not only scalable but capable of processing massive data volumes with near-zero latency (D0).

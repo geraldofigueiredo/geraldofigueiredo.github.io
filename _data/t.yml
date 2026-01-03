@@ -1,0 +1,10 @@
+# _data/t.yml
+en:
+  title: GeraldoFigueiredo
+  tagline: My thoughts, paths, and learnings
+  description: A personal blog about software development, technology, and other interests.
+
+pt-br:
+  title: GeraldoFigueiredo
+  tagline: Meus pensamentos, caminhos e aprendizados
+  description: Um blog pessoal sobre desenvolvimento de software, tecnologia e outros interesses.

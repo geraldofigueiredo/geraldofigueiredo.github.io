@@ -1,6 +1,8 @@
 ---
 layout: post
 title: From Chaos to Order What I learned rebuilding my homelab from zero
+lang: en
+slug: from-chaos-to-order-homelab-rebuild
 date: 2025-12-28 10:00:00 +0800
 categories: [Infrastructure & DevOps, Self-Hosting]
 tags: [homelab, docker, InfrastructureAsCode, traefik, observability, selfhosting]

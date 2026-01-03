@@ -11,15 +11,21 @@ lang: en
 # Change to your timezone › https://zones.arilyn.cc
 timezone:
 
+# Polyglot settings
+languages: ["en", "pt-br"]
+default_lang: "en"
+exclude_from_localization: ["assets", "css", "js", "img", "vendor"]
+parallel_localization: true
+
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: GeraldoFigueiredo # the main title
+# title: GeraldoFigueiredo # the main title
 
-tagline: My thoughts, paths, and learnings # it will display as the subtitle
+# tagline: My thoughts, paths, and learnings # it will display as the subtitle
 
-description: >- # used by seo meta and the atom feed
-  A personal blog about software development, technology, and other interests.
+# description: >- # used by seo meta and the atom feed
+  # A personal blog about software development, technology, and other interests.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
